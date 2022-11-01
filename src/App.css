@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Monsterrat", sans-serif;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 1rem;
+  height: 3rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container .logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1C1D1F;
+  text-decoration: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links ul {
+  list-style: none;
 }
+.nav-links ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-line {
+  height: 3px;
+  width: 100%;
+  background-color: #1C1D1F;
+}
+
+@font-face {
+  font-family: "Monsterrat";
+  src: url("fonts/Montserrat-ru.ttf");
+}
+.Main {
+  background-image: url(./images/star-bg.jpg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*# sourceMappingURL=App.css.map */
